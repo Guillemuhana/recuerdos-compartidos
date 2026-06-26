@@ -16,6 +16,7 @@ function App() {
       <Faq />
       <Business />
       <Discounts />
+      <Packaging />
       <Contact />
       <Footer />
     </main>
@@ -89,6 +90,7 @@ function HowWorks() {
     <div className="container">
       <span className="eyebrow aqua">Cómo funciona</span>
       <h2>Del recuerdo familiar a un memorial accesible con QR.</h2>
+      <div className="howImg"><img src="/assets/img12.png" alt="Persona escaneando el código QR de una placa en una lápida" /></div>
       <div className="steps">{steps.map(([n, t, d]) => <article className="step" key={n}><b>{n}</b><h3>{t}</h3><p>{d}</p></article>)}</div>
       <div className="formats"><Video/> MP4, AVI, WMV <Music/> MP3 y YouTube <Images/> JPG, PNG, GIF</div>
     </div>
@@ -149,6 +151,24 @@ function Faq() {
       <span className="eyebrow aqua">Preguntas frecuentes</span>
       <h2>Todo claro antes de comenzar.</h2>
       <div className="faqGrid">{faqs.map(([q, a]) => <details key={q} open><summary>{q}</summary><p>{a}</p></details>)}</div>
+    </div>
+  </section>
+}
+
+function Packaging() {
+  return <section id="packaging" className="section light">
+    <div className="container twoCol reverse">
+      <div className="imageFrame"><img src="/assets/paka.png" alt="Packaging de Recuerdos Compartidos con la placa QR y la tarjeta de acceso" /></div>
+      <div>
+        <span className="eyebrow">Cómo lo entregamos</span>
+        <h2>Llega listo, en un packaging cuidado.</h2>
+        <p>Cada memorial se entrega en un estuche conmemorativo con la placa QR, una tarjeta con tus credenciales de acceso y las instrucciones para empezar a compartir recuerdos.</p>
+        <ul className="checks">
+          <li><QrCode/> Placa QR personalizada, lista para adherir.</li>
+          <li><ShieldCheck/> Tarjeta con usuario y contraseña privados.</li>
+          <li><Truck/> Presentación elegante, ideal para entregar o regalar.</li>
+        </ul>
+      </div>
     </div>
   </section>
 }
