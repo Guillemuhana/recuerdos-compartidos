@@ -63,7 +63,7 @@ img{max-width:100%;display:block}
 
 /* ---------- Hero ---------- */
 .hero{position:relative;min-height:100svh;display:grid;align-items:center;overflow:hidden;background:var(--dark);color:#fff;padding:140px 0 70px}
-.heroBg{position:absolute;inset:0;background-color:#0a0b0f;background-image:url('/assets/hero-home.png');background-repeat:no-repeat;background-position:calc(50% + 110px) center;background-size:contain}
+.heroBg{position:absolute;inset:0;background-color:#0a0b0f;background-image:url('/assets/hero-home.png');background-repeat:no-repeat;background-position:calc(50% + 160px) center;background-size:contain}
 .heroBg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,7,10,.92),rgba(7,7,10,.45),rgba(7,7,10,.72))}
 .hero::after{content:"";position:absolute;inset:auto 0 0;height:240px;background:linear-gradient(transparent,var(--dark))}
 .heroContent{position:relative;z-index:2;width:min(540px,90%);margin-left:clamp(22px,7vw,90px);border-left:1px solid rgba(255,255,255,.18);padding-left:clamp(22px,3vw,42px)}
@@ -196,7 +196,7 @@ footer{text-align:center;padding:34px;background:#070809;color:rgba(255,255,255,
   .brand img{width:34px;height:34px}
   .smallCta{padding:10px 14px;font-size:.72rem}
   .hero{padding:120px 0 70px;min-height:92svh}
-  .heroBg{background:#0a0b0f url('/assets/imgcel.png') center top/cover no-repeat}
+  .heroBg{background:#0a0b0f url('/assets/imgcel.png') center top/cover no-repeat;top:58px}
   .heroBg::after{background:linear-gradient(180deg,rgba(7,7,10,.55),rgba(7,7,10,.35) 40%,rgba(7,7,10,.85))}
   .heroContent{padding-left:18px}
   .heroActions{gap:12px}
