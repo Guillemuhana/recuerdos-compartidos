@@ -109,7 +109,7 @@ img{max-width:100%;display:block}
 /* ---------- Image frame ---------- */
 .imageFrame{border-radius:0;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);position:relative}
 .imageFrame::after{content:"";position:absolute;inset:14px;border:1px solid rgba(255,255,255,.35);pointer-events:none}
-.imageFrame img{height:540px;width:100%;object-fit:cover}
+.imageFrame img{width:100%;height:auto;display:block;object-fit:contain}
 
 /* ---------- Checks ---------- */
 .checks{padding:0;margin:30px 0 0;display:grid;gap:0;list-style:none;border-top:1px solid var(--line)}
@@ -184,7 +184,7 @@ footer{text-align:center;padding:34px;background:#070809;color:rgba(255,255,255,
   .heroContent{margin:auto}
   .quote{position:relative;right:auto;bottom:auto;margin:36px auto 0;width:92%;font-size:1.5rem}
   .section{padding:80px 0}
-  .phoneMock img,.imageFrame img{height:460px}
+  .phoneMock img{height:460px}
   .contactBox{box-shadow:0 16px 44px rgba(15,15,20,.14)}
   .contactBox>div,.contact form{padding:34px}
 }
@@ -212,7 +212,7 @@ footer{text-align:center;padding:34px;background:#070809;color:rgba(255,255,255,
   .faqGrid details{border-right:none!important}
 
   .formats{gap:12px;font-size:.85rem;padding:16px 18px}
-  .phoneMock img,.imageFrame img{height:380px}
+  .phoneMock img{height:380px}
   .imageFrame::after{inset:10px}
   .contactBox>div,.contact form{padding:26px}
   th,td{padding:14px 16px;font-size:.9rem}
@@ -223,5 +223,5 @@ footer{text-align:center;padding:34px;background:#070809;color:rgba(255,255,255,
 @media (max-width:380px){
   .brand span{font-size:.62rem}
   .hero h1{font-size:2.4rem}
-  .phoneMock img,.imageFrame img{height:320px}
+  .phoneMock img{height:320px}
 }
