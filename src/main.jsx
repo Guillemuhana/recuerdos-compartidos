@@ -26,7 +26,6 @@ function App() {
 function Header() {
   return <header className="header">
     <a className="brand" href="#inicio">
-      <img src="/assets/logo.png" alt="Recuerdos Compartidos" />
       <span>Recuerdos<br/>Compartidos</span>
     </a>
     <nav>
