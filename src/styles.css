@@ -197,10 +197,10 @@ footer{text-align:center;padding:34px;background:#070809;color:rgba(255,255,255,
   .header{padding:12px 18px}
   .brand img{width:34px;height:34px}
   .smallCta{padding:10px 14px;font-size:.72rem}
-  .hero{padding:60px 0 12px;min-height:100svh;display:flex;align-items:stretch}
+  .hero{padding:88px 0 12px;min-height:100svh;display:flex;align-items:stretch}
   .heroBg{background:#0a0b0f url('/assets/imgcel.png') center top/cover no-repeat;top:58px}
   .heroBg::after{background:linear-gradient(180deg,rgba(7,7,10,.55),rgba(7,7,10,.3) 38%,rgba(7,7,10,.8))}
-  .heroContent{padding-left:18px;display:flex;flex-direction:column;min-height:calc(100svh - 72px)}
+  .heroContent{padding-left:18px;display:flex;flex-direction:column;min-height:calc(100svh - 100px)}
   .hero .pill{display:none}
   .hero h1{font-size:1.65rem;margin:2px 0 0}
   .hero p{font-size:.98rem;margin-top:10px}
