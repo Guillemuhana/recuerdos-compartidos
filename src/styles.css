@@ -68,7 +68,7 @@ img{max-width:100%;display:block}
 .hero::after{content:"";position:absolute;inset:auto 0 0;height:240px;background:linear-gradient(transparent,var(--dark))}
 .heroContent{position:relative;z-index:2;width:min(540px,90%);margin-left:clamp(22px,7vw,90px);border-left:1px solid rgba(255,255,255,.18);padding-left:clamp(22px,3vw,42px)}
 .heroActions{display:flex;gap:16px;flex-wrap:wrap;margin-top:38px}
-.quote{position:absolute;right:6%;bottom:9%;z-index:3;max-width:340px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.7rem;line-height:1.35;color:rgba(255,255,255,.72);padding-left:20px;border-left:2px solid var(--aqua)}
+.quote{position:absolute;right:6%;bottom:4%;z-index:3;max-width:300px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.25rem;line-height:1.4;color:rgba(255,255,255,.72);padding-left:18px;border-left:2px solid var(--aqua)}
 
 /* ---------- Sections ---------- */
 .section{padding:110px 0}
@@ -195,7 +195,9 @@ footer{text-align:center;padding:34px;background:#070809;color:rgba(255,255,255,
   .header{padding:12px 18px}
   .brand img{width:34px;height:34px}
   .smallCta{padding:10px 14px;font-size:.72rem}
-  .hero{padding:120px 0 60px;min-height:auto}
+  .hero{padding:120px 0 70px;min-height:92svh}
+  .heroBg{background:#0a0b0f url('/assets/imgcel.png') center/cover no-repeat}
+  .heroBg::after{background:linear-gradient(180deg,rgba(7,7,10,.55),rgba(7,7,10,.35) 40%,rgba(7,7,10,.85))}
   .heroContent{padding-left:18px}
   .heroActions{gap:12px}
   .heroActions .btn{flex:1 1 100%}
