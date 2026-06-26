@@ -158,7 +158,7 @@ function Faq() {
 function Packaging() {
   return <section id="packaging" className="section light">
     <div className="container twoCol reverse">
-      <div className="imageFrame"><img src="/assets/paka.png" alt="Packaging de Recuerdos Compartidos con la placa QR y la tarjeta de acceso" /></div>
+      <div className="imageFrame"><img src="/assets/paka.png?v=2" alt="Packaging de Recuerdos Compartidos con la placa QR y la tarjeta de acceso" /></div>
       <div>
         <span className="eyebrow">Cómo lo entregamos</span>
         <h2>Llega listo, en un packaging cuidado.</h2>
