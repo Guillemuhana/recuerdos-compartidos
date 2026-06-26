@@ -56,7 +56,8 @@ function WhatIs() {
   const cards = [
     ['Biografía', 'Una descripción escrita de su historia de vida.', Heart],
     ['Galería', 'Fotos, audios, música y videos para recordar momentos especiales.', Images],
-    ['Mensajes', 'Saludos recordatorios de familiares y amigos.', MessageCircle]
+    ['Mensajes', 'Saludos recordatorios de familiares y amigos.', MessageCircle],
+    ['Ubicación', 'La ubicación de la parcela para encontrar fácilmente el lugar de descanso.', MapPin]
   ]
   return <section id="memorial" className="section light">
     <div className="container twoCol">

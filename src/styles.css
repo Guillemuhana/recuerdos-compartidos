@@ -81,10 +81,14 @@ img{max-width:100%;display:block}
 .reverse{grid-template-columns:1.2fr .8fr}
 
 /* ---------- Cards ---------- */
-.cardGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:34px;border:1px solid var(--line)}
-.miniCard{border:none;border-right:1px solid var(--line);border-radius:0;background:transparent;padding:30px 26px;transition:background .3s}
-.cardGrid .miniCard:last-child{border-right:none}
+.cardGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;margin-top:34px;border:1px solid var(--line)}
+.miniCard{border:none;border-radius:0;background:transparent;padding:30px 26px;transition:background .3s}
 .miniCard:hover{background:#fff}
+@media (min-width:641px){
+  .cardGrid .miniCard{border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .cardGrid .miniCard:nth-child(2n){border-right:none}
+  .cardGrid .miniCard:nth-last-child(-n+2){border-bottom:none}
+}
 .miniCard svg,.checks svg,.contactLinks svg,.benefits svg{color:var(--aqua);flex:none}
 .miniCard h3,.step h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;margin:.9rem 0 .35rem}
 .miniCard p,.step p{font-size:.94rem;line-height:1.6;color:var(--muted)}
@@ -201,8 +205,8 @@ footer{text-align:center;padding:34px;background:#070809;color:rgba(255,255,255,
   .heroBg{background:#0a0b0f url('/assets/imgcel.png') center top/cover no-repeat;top:58px}
   .heroBg::after{background:linear-gradient(180deg,rgba(7,7,10,.55),rgba(7,7,10,.3) 38%,rgba(7,7,10,.8))}
   .heroContent{padding-left:18px;display:flex;flex-direction:column;min-height:calc(100svh - 130px)}
-  .hero .pill{display:none}
-  .hero h1{font-size:1.65rem;margin:2px 0 0}
+  .hero .pill{font-size:.68rem;letter-spacing:.14em}
+  .hero h1{font-size:1.65rem;margin:12px 0 0}
   .hero p{font-size:.98rem;margin-top:10px}
   .heroActions{gap:10px;flex-direction:column;align-items:stretch;margin-top:auto;padding-top:24px}
   .heroActions .btn{flex:0 0 auto;padding:13px 18px;font-size:.76rem}
