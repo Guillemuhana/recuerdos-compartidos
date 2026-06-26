@@ -199,8 +199,9 @@ footer{text-align:center;padding:34px;background:#070809;color:rgba(255,255,255,
   .heroBg{background:#0a0b0f url('/assets/imgcel.png') center top/cover no-repeat;top:58px}
   .heroBg::after{background:linear-gradient(180deg,rgba(7,7,10,.55),rgba(7,7,10,.35) 40%,rgba(7,7,10,.85))}
   .heroContent{padding-left:18px}
-  .heroActions{gap:12px}
-  .heroActions .btn{flex:1 1 100%}
+  .heroActions{gap:10px;flex-direction:column;align-items:flex-start}
+  .heroActions .btn{flex:0 0 auto;padding:12px 18px;font-size:.74rem}
+  .quote{display:none}
   .section{padding:64px 0}
 
   .cardGrid,.steps,.benefits,.faqGrid{grid-template-columns:1fr}
