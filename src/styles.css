@@ -195,11 +195,11 @@ footer{text-align:center;padding:34px;background:#070809;color:rgba(255,255,255,
   .header{padding:12px 18px}
   .brand img{width:34px;height:34px}
   .smallCta{padding:10px 14px;font-size:.72rem}
-  .hero{padding:120px 0 70px;min-height:92svh}
+  .hero{padding:88px 0 56px;min-height:92svh;align-items:stretch}
   .heroBg{background:#0a0b0f url('/assets/imgcel.png') center top/cover no-repeat;top:58px}
-  .heroBg::after{background:linear-gradient(180deg,rgba(7,7,10,.55),rgba(7,7,10,.35) 40%,rgba(7,7,10,.85))}
-  .heroContent{padding-left:18px}
-  .heroActions{gap:10px;flex-direction:column;align-items:flex-start}
+  .heroBg::after{background:linear-gradient(180deg,rgba(7,7,10,.55),rgba(7,7,10,.3) 38%,rgba(7,7,10,.8))}
+  .heroContent{padding-left:18px;display:flex;flex-direction:column}
+  .heroActions{gap:10px;flex-direction:column;align-items:flex-start;margin-top:auto;padding-top:24px}
   .heroActions .btn{flex:0 0 auto;padding:12px 18px;font-size:.74rem}
   .quote{display:none}
   .section{padding:64px 0}
