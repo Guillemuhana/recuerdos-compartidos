@@ -98,7 +98,7 @@ function HowWorks() {
 function Plaque() {
   return <section id="placa-qr" className="section light">
     <div className="container twoCol reverse">
-      <div className="imageFrame"><img src="/assets/placa-qr.jpg" alt="Placa con código QR en lápida" /></div>
+      <div className="imageFrame"><img src="/assets/placa-qr.png" alt="Placa con código QR en lápida" /></div>
       <div>
         <span className="eyebrow">Placa conmemorativa</span>
         <h2>Una placa QR resistente para acceder al memorial.</h2>
