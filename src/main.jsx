@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { Heart, QrCode, Images, MessageCircle, Music, Video, ShieldCheck, Truck, CreditCard, MapPin, Camera, Mail, Phone, ChevronRight, Building2, Sparkles } from 'lucide-react'
 import './styles.css'
 
-const nav = ['Inicio', 'Memorial', 'Placa QR', 'Funerarias', 'FAQ', 'Contacto']
+const nav = ['Inicio', 'Memorial', 'Placa QR', 'FAQ', 'Contacto', 'Para empresas']
 
 function App() {
   return (
@@ -13,9 +13,9 @@ function App() {
       <WhatIs />
       <HowWorks />
       <Plaque />
+      <Faq />
       <Business />
       <Discounts />
-      <Faq />
       <Contact />
       <Footer />
     </main>
@@ -115,11 +115,11 @@ function Plaque() {
 
 function Business() {
   const benefits = ['Valor agregado para sus clientes', 'Ingresos adicionales', 'Fidelización del cliente', 'Modelo de negocio flexible', 'Bajo costo de implementación', 'Ventaja competitiva']
-  return <section id="funerarias" className="section business">
+  return <section id="para-empresas" className="section business">
     <div className="container center">
-      <span className="eyebrow aqua">Funerarias y cementerios</span>
+      <span className="eyebrow aqua">Para empresas · Funerarias y cementerios</span>
       <h2>Una oportunidad de negocio con tecnología emocional.</h2>
-      <p>Permite diferenciarse de la competencia ofreciendo un servicio innovador que conecta a las familias con recuerdos emotivos.</p>
+      <p>Esta sección está pensada para funerarias, cementerios y aliados comerciales que quieran ofrecer el memorial como un servicio adicional a las familias.</p>
       <div className="benefits">{benefits.map(b => <div key={b}><Building2 size={22}/>{b}</div>)}</div>
     </div>
   </section>
